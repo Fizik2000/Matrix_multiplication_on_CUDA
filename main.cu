@@ -1,5 +1,8 @@
 #include "stdio.h"
 
+extern void MatrixMulOnDevice(double **A, double **B, double **C, int height,
+                              int width, int common_number);
+
 int main() {
   int height, width;
   scanf("%dX%d\n", &height, &width);
